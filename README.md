@@ -1,0 +1,16 @@
+# Topic_modelling
+Modelling topics for amazon alexa review
+
+NLP techniques can be used to group the customer reviews of the Amazon Alexa device into topics or themes. This can help businesses understand what features or aspects of the product are most important to their customers and can be utilized to improve the product or its marketing.
+Dependent variable (DV): The dependent variable for this problem would be the topic or theme of the review, which can be represented as a categorical variable. This variable is predicted from the predictor variable("verified_reviews"). This variable captures the underlying themes or topics discussed by the customers in their reviews, which is important for businesses to understand as it helps them identify the most important features of their product as perceived by their customers. 
+The predictor for this problem would be the "verified_reviews" column, which contains the text of the customer reviews.
+The choice of the "verified_reviews" column as the predictor in both the sentiment analysis and topic modeling problems is because it contains the text of the customer reviews, which is the most relevant and informative data for these problems. The text contains valuable information about the customers' opinions, experiences, and expectations, which can be leveraged to gain insights into the customers' perception of the product. Additionally, these problems do not require any other predictor variables as the text of the reviews is sufficient to extract the sentiment and topic information.
+Here date column, variation column and rating columns are dropped.
+Here 3 different techniques were chosen to fulfill this task. 
+
+1.	LDA (Latent Dirichlet Allocation) was chosen as one of the techniques for topic modeling. The "verified_reviews" column, which contains the text of the customer reviews, was used as the predictor variable. LDA algorithm was applied using appropriate libraries in the chosen programming environment. LDA can identify underlying topics or themes in the customer reviews and assign each review to one or more topics based on the distribution of words in the text.
+
+2.	NMF (Non-negative Matrix Factorization) was chosen as another technique for topic modeling. The "verified_reviews" column was used as the predictor variable. NMF algorithm was applied using appropriate libraries in the chosen programming environment. NMF factorizes the matrix of word occurrences in the text into two matrices, one representing the topics and the other representing the topic-document assignments, which can help identify topics in the customer reviews.
+
+3.	Nonnegative NMF (Non-negative Matrix Factorization) was chosen as a third technique for topic modeling. The "verified_reviews" column was used as the predictor variable. Nonnegative NMF algorithm was applied using appropriate libraries in the chosen programming environment. Nonnegative NMF is similar to NMF, but with the constraint that all matrix entries are nonnegative, which can result in more interpretable topics. It can also help identify underlying topics in the customer reviews by factorizing the matrix of word occurrences in the text into two nonnegative matrices.
+
